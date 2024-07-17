@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class TWExchangeCurrency extends AppCompatActivity {
+public class TWDeposit extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
