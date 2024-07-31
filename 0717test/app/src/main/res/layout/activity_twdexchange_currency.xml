@@ -5,72 +5,70 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TWDeposit">
+    tools:context=".NTDActivity">
 
     <LinearLayout
-        android:layout_width="362dp"
-        android:layout_height="749dp"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:gravity="center|top"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.919">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView11"
-            android:layout_width="wrap_content"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center|top"
-            android:gravity="center|top"
-            android:text="新台幣存款"
-            android:textSize="60sp" />
+            android:gravity="center"
+            android:text="新台幣存/提款"
+            android:textSize="34sp" />
 
         <LinearLayout
-            android:layout_width="339dp"
-            android:layout_height="124dp"
-            android:layout_gravity="center|top"
-            android:gravity="center|top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="金額:"
-                android:textSize="48sp" />
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="金額：" />
 
             <EditText
-                android:id="@+id/editTextText4"
+                android:id="@+id/et_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:ems="10"
-                android:inputType="text" />
+                android:inputType="number" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="297dp"
-            android:layout_height="269dp"
-            android:layout_gravity="center|top"
-            android:gravity="center|top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/tontd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                android:text="存款"
-                android:textSize="34sp" />
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="GoBack"
+                android:text="存款" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/ntdto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                android:text="領錢"
-                android:textSize="34sp" />
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="GoBack"
+                android:text="提款" />
         </LinearLayout>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

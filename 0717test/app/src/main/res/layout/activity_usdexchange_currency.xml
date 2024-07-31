@@ -5,102 +5,94 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="5dp"
-    tools:context=".USDExchangeCurrency">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="260dp"
-        android:layout_height="112dp"
-        android:gravity="center|top"
-        android:text="美金換匯"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079" />
+    tools:context=".ExchangeActivity">
 
     <LinearLayout
-        android:layout_width="393dp"
-        android:layout_height="287dp"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:gravity="center|top"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391">
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="美金"
+            android:textSize="34sp" />
 
         <LinearLayout
-            android:layout_width="330dp"
-            android:layout_height="91dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="金額:"
-                android:textSize="34sp" />
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="金額：" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/et_amount"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:ems="10"
-                android:inputType="text"
-                android:textAlignment="center"
-                android:textSize="18sp"
-                android:textStyle="italic" />
+                android:inputType="number" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="336dp"
-            android:layout_height="115dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/usdBalance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="匯率:"
-                android:textSize="34sp" />
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="匯率：" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/et_rate"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:ems="10"
-                android:inputType="text"
-                android:textAlignment="center"
-                android:textSize="18sp"
-                android:textStyle="italic" />
+                android:inputType="text" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="194dp"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/tontd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:text="美金換台幣"
-                android:textSize="24sp" />
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="changeCoin"
+                android:text="toNTD" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/ntdto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:text="台幣換美金"
-                android:textSize="24sp" />
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:onClick="changeCoin"
+                android:text="NTDto" />
         </LinearLayout>
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
