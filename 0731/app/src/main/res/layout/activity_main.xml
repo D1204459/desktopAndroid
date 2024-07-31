@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="30"
@@ -24,7 +25,6 @@
         android:layout_width="164dp"
         android:layout_height="53dp"
         android:gravity="center|top"
-        android:onClick="onClick"
         android:text="一串文字"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,17 +48,19 @@
         app:layout_constraintVertical_bias="0.313" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/position"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
