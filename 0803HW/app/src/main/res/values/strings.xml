@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">0803HW</string>
+    <string name="phone_button_description">撥打電話按鈕</string> <!-- 新添加的字符串 -->
+    <string name="map_button_description">顯示地圖按鈕</string> <!-- 新添加的字符串 -->
+    <string name="restaurant_button_description">顯示餐廳資訊按鈕</string> <!-- 新添加的字符串 -->
+</resources>
