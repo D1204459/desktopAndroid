@@ -21,26 +21,83 @@
         app:srcCompat="@drawable/thelin" />
 
     <LinearLayout
-        android:layout_width="330dp"
-        android:layout_height="245dp"
+        android:layout_width="186dp"
+        android:layout_height="221dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.783">
+        app:layout_constraintVertical_bias="0.809">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:gravity="center|top"
+            android:text="餐廳資訊"
+            android:textSize="24sp" />
 
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="161dp"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/restaurant" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="153dp"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="訂位專線"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="135dp"
+            android:layout_height="103dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="181dp"
+        android:layout_height="182dp"
+        android:layout_marginEnd="212dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="地圖搜尋"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="149dp"
+            android:layout_height="135dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/google_maps" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
